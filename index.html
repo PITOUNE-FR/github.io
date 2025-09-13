@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <!-- ="" c'est un attribu  -->
+    <!-- la balise <head> c'est ce qui est endehor de la page , la balise <h> c'est ce qui sera en tete de la page c'est a dire le titre et il y a plusiuers niveau possible h1,h2...h6-->
+    <head>
+
+     <!--COMMENTAIRE CACHÉ   -->
+     <title>LE SITE DE PITOUNE</title>
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+     <link rel="stylesheet" href="DESIGN/style.css">
+    
+<!-- link c'est le lien entre la page actuelle et  un document, une image , un fichier...
+ deux types d'elements dans le htlm 
+ block : qui prend toute la page   exemple the first page c'est block CAR SI JE L4ECRIS DEUX FOIS IL VA SE METTRE L4UN EN DESSOUS DE L AUTRE
+ inlin qui ne prend que l'element EXEMPLE TEST ELEMENT INLINE je le'aiecrit deux fois et il s'est mis l'un a coté de l'autre 
+ 
+ margin marge orange exxterne
+ padding marge bleue interne
+ regle margin: si le bas n'est pas donné alors = haut , si le gauche n'est pas donné alors = droite-->
+ 
+    </head>
+
+    <body>
+        <!-- CONTENEUR -->
+     <section id="bienvenue">
+        <!-- EN TETE -->
+        <div class="conteneur">
+            <header>
+                "The first page"
+                <span id="slogan">peut etre le projet pour un nouvel avenir</span>
+            </header>
+        </div>
+    </section>
+        
+        
+
+        <!-- CONTENU -->
+        
+        <section>
+            <h1><i><u>"POURQUOI CE SITE"</i></u></h1>
+            
+            <!-- avec le css on a tjrs propriété: valeur; 
+             1er maniere style="width" par exemple pour l'image
+             2 eme c'est d'aller dans <head> et de rajouter la balise <style> mais si on veut changer des elements dans plusieurs page il faudra le faire a la mano donc si il y a 50 pages a modifier pour des couluers c'est relou
+                donc 3 eme maniere utiliser une feuille de style externe afin de pouvoir chager partout en un clique 
+                mais comment faire pour ne changer des couleurs que dans le manu et pas dans tous les liens à cliquer ? au lieu de mettre <section> on va mettre <nav a, nav li ...> et de preciser dans la feuille de style qu'il faut changer qu'a l'interieur de la balise <nav>-->
+            <!-- alt permet la description pour les malvoyants et width permet de redimentionner -->
+        </section>
+
+        <section class="contenu conteneur">
+            <!-- TOP -->
+             
+        
+
+            <section>
+                <div id="TOP">
+                <h2>Mon Projet, mes réflexions :</h2>
+            
+
+                <p>Reconvertion ? loisir ? je ne sais pas encore. Alors <span class="mot">bienvenue</span> sur <span class="italic">mon premier site !</span></p>
+
+                 <p>Je me passionne pour le <span class="mot">code</span> et j'aimerai peut etre me <span class="bold">former</span> comme <span class="underline">développeur web</span></p>
+                </div>
+                 <section id="flexbox-idées">
+
+
+                 <a href=""id="code" class="idées">Code</a>
+
+                 <a href="" id="formationdeveloppeur" class="idées">Formation développeur</a>
+
+                 <a href="" id="reussite" class="idées">Réussite</a>
+
+                 <a href="" id="avenir" class="idées">Avenir</a>
+
+                </section>
+                <!-- EN VOIR PLUS -->
+                 <div style="text-align: right; margin-top: 10px;">
+                    <a href="" id="voir">En voir plus <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6 6l6-6m-6-6l6 6"/></svg></a>
+                </div>
+            </section>
+            
+        </SECTION>
+        
+        <!-- PIED -->
+        <footer>
+            <div class="conteneur" id="flexbox-foot">
+            <!-- QUAND ON UTILISE SPACE BETWEEN  POUR CACUN DE NOS ELEMENTS ON AURA UN ESPACE PROPORTIONNEL-->
+             <div id="logo-foot"> 
+            <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/2443326-icone-de-reseau-informatique-vectoriel.jpg" alt="ordi" style="width: 70px; display: block;"/>
+            2025 © FIRST PAGE
+            </div>  
+            <nav>
+                <ul>
+                   <li><a href="index.html">Acceuil</a></li>
+                   <li><a href="APROPOS.html">A propos</a></li>
+                </ul>
+            <!-- balise <a href> permet de creer des liens vers autres pages ou contenu-->
+            <!-- balise p permet de creer des paragraphe -->
+             <!-- liste non ordonnée "under..list" c'est <ul> ce qui donne acceuil et a propos l'un a coté de l'autre en rajoutant <li> on a acceuil et a propos l'un dessous de l'autre avec un point, 
+                liste ordonnée oderlist c'est <ol> on aura un numero -->
+                    <!-- <i> italique, <b> gras on peut voir <strong> cela permet d'etre detecté par google aussi  , souligner <u> -->
+                        <!-- LES ID et LES CLASSES: un id il peut n'y avoir qu'un seul dans une page alors que des classes plusieurs pour utiliser un id on mais un # et une classe on met un . dans la feuille de style.
+                         on va utiliser alors plus des classes que de l'id
+                         donc on créait par exemple pour changer la couleur de certain mot dans une page la balise class="mot" et on met dans la feuille de style .mot et la couleur et ensuite pour reutiliser cette balisde class dans un autre endroit de la page, on utilise <span class>="mot"...</span>-->
+            </nav>
+            </div>
+        </footer>
+    
+    </body>    
+ </html>
+
+
+<!--  balise footer : pour pied de page
+  POUR METTRE UNE IMAGE DE FOND  background-image: url""   car on ne met pas un lien vers un fichier mais vers une url
+  on recherche theme image "pattern" car c'est un motif qui se repete  
+  si l'image de font est trop grande ou autre on peut la modifier avec background-size:
+  changer le fond avec background-color: , background-position
+  
+mais ca fait bcp d'etape il existe une proprité pour faire tout ca on utilise
+background: en premier image, puis couleur de fond
+-->
+<!-- pour centrer son text sur une page pour que ce soit plus jolie on va creer une nouvelle class
+ CONTENEUR CELA SERT A CENTRER DES ELEMENTS 
+ et si on veut uniquement centrer une nforation dans un element n utilise div classe
+ Viewport c'est une unité de mesure pour les iages pour qu'elle prennent 100% de la page
+ vh pour la hauteur de la vue
+ vw pour la largeur de la vue 
+ dans bacground-size on peut utiliser cover comme ca l'image occupe tout l'espace
+ 
+ POUR AJOUTER DES OMBRES : testx-shadow x(abscisse) y(ordonnée) flou(px) couleur
+ paddin-top marge interne--
+ flexbox permet de rendre les block flexible comme pour le balise header
+ il y a 3 proprités justify-content: : preciser si les elements à l'interieur de notre boit sont alignés à gauche
+ content align-items: ca permet de dire ou on veut placer les elements
+ flex-direction: flex box par deafault va mettre tous les elements de'un bloc l'un a coté de l'autre
+ de ce fait avec flex-direction: row pour ligne column pour les mettre en colonne>
